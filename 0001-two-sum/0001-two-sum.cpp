@@ -1,16 +1,18 @@
+#include <unordered_map>
+
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        vector<int> solution;
-        for (int first = 0; first < (nums.size() - 1); first++)  {
-            for (int second = first + 1; second < nums.size(); second++)  {
-                if ((nums[first] + nums[second]) == target)  {
-                    solution.push_back(first);
-                    solution.push_back(second);
-                    break;
-                }
+        unordered_map<int, int> myMap;
+        for (int current = 0; current < nums.size(); current++)  {
+            if (myMap.find((target - nums[current])) == myMap.end())  {
+                myMap[nums[current]] = current;
+                continue;
             }
+            
+            return {myMap[target - nums[current]], current};
         }
-        return solution;
+        
+        return {NULL, NULL};
     }
 };
