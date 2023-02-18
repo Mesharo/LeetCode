@@ -1,13 +1,13 @@
 class Solution {
 public:    
     bool isPalindrome(int x) {
-        /*string s = to_string(x);
+        string s = to_string(x);
         reverse(s.begin(), s.end());
         
         if (to_string(x) == s)  {
             return true;
         }
-        return false;*/
+        return false;
         
     
         /*
@@ -23,14 +23,6 @@ public:
         
         return true;
         */
-        
-        string s = to_string(x);
-        for (int current = 0; current < (s.size() / 2); current++)  {
-            if (s[current] != s[s.size() - current - 1])  {
-                return false;
-            }
-        }
-        return true;
     }
 };
 
