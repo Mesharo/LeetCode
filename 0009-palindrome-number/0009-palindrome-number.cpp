@@ -1,8 +1,16 @@
-#include <string>
-
 class Solution {
 public:    
     bool isPalindrome(int x) {
+        string s = to_string(x);
+        reverse(s.begin(), s.end());
+        
+        if (to_string(x) == s)  {
+            return true;
+        }
+        return false;
+        
+    
+        /*
         string s = to_string(x);
         int i = 0; int j = s.size() - 1;
         
@@ -14,6 +22,7 @@ public:
         }  
         
         return true;
+        */
     }
 };
 
