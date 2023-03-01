@@ -9,7 +9,7 @@ public:
             if (nums.size() == 1)  {
                 return (sum + nums.front());
             }
-            sum += stoll(to_string(nums.front()) + to_string(nums.back()));
+            sum += stoll((to_string(nums.front()) + to_string(nums.back())));
             nums.erase(nums.begin()); nums.pop_back();
         }
         
