@@ -13,7 +13,6 @@ public:
                 }
                 
                 int subbox = (x / 3) * 3 + (y / 3);
-                cout << subbox << " ";
                 
                 if (myMap.find(board[x][y]) == myMap.end())  {
                     myMap[board[x][y]] = {{x, y, subbox}};
