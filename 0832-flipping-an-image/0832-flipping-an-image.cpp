@@ -6,7 +6,7 @@ public:
         for (auto v : image)  {
             reverse(v.begin(), v.end());
             for (auto current = 0; current < v.size(); current++)  {
-                v[current] == 0 ? v[current] = 1 : v[current] = 0;
+                v[current] = 1 - v[current];
             }
             result.push_back(v);
         }
