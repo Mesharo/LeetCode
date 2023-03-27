@@ -1,10 +1,9 @@
 class Solution {
 public:
-       
     string modifyString(string s) {
         
         for (auto current = 0; current < s.length(); current++)  {
-            int ascii = 97; // a
+            int ascii = 97;
             
             if (s[current] == '?')  {
                 while (true)  {
