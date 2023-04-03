@@ -17,7 +17,7 @@ public:
         
         sort(notIn.begin(), notIn.end());
         arr2.insert(arr2.end(), notIn.begin(), notIn.end());
-        
+                
         int index = 0;
         for (auto i : arr2)  {
             while (myMap[i] != 0)  {
