@@ -8,7 +8,7 @@ public:
 };
 
 
-/* HashTable approach
+/*  HashTable approach
     int majorityElement(vector<int>& nums) {
         unordered_map<int, int> myMap;
         
