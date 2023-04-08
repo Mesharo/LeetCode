@@ -18,4 +18,4 @@ public:
     }
 };
 
-// Abominable if statements in order to save memory ... 
+// Abominable if statements in order to save memory ..
