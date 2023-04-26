@@ -4,5 +4,4 @@ class Solution:
         for x in jewels:
             result += stones.count(x)
         return result
-            
-#
+        
