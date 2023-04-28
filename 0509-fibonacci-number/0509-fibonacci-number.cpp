@@ -12,3 +12,5 @@ public:
         return (n == 0) ? first : second;
     }
 };
+
+//
