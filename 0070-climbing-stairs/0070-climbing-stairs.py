@@ -8,6 +8,6 @@ class Solution:
         for _ in range(4, n+1):
             first, second = second, first+second
             
-        return(second)
+        return second
 
 #
