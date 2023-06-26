@@ -1,7 +1,6 @@
 class MinStack:
     def __init__(self):
         self.storage = []
-        self.min = 2147483648 # 2^31
 
     def push(self, val: int) -> None:
         if not self.storage or self.storage[-1][1] > val:
