@@ -4,11 +4,8 @@ class Solution:
         
         for x in s:
             if x == 'i':
-                res = self.reverseString(res)
+                res = res[::-1]
                 continue
             res += x
             
         return res
-
-    def reverseString(self, s: str) -> str:
-        return s[::-1]
